@@ -45,12 +45,12 @@ public class MergeSort {
     /**
      * 排序数组
      */
-    static void beginMergeSort(int[] arr, int p, int r) {
+    public static void Merge_Sort(int[] arr, int p, int r) {
         if (p < r) {    //否则就只有一个元素
             //  分解为两个子数组
             int q = (p + r) / 2;
-            beginMergeSort(arr, p, q);
-            beginMergeSort(arr, q + 1, r);
+            Merge_Sort(arr, p, q);
+            Merge_Sort(arr, q + 1, r);
             //  合并结果
             Merge(arr, p, q, r);
         }
@@ -58,7 +58,7 @@ public class MergeSort {
 
     public static void main(String[] args) {
         int[] testArr = {5, 2, 4, 7, 1, 3, 2, 6};
-        beginMergeSort(testArr, 0, testArr.length - 1);
+        Merge_Sort(testArr, 0, testArr.length - 1);
         System.out.println(Arrays.toString(testArr));
     }
 }
