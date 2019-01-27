@@ -1,9 +1,9 @@
-package Chapter6;
+package Chapter7;
 
 import java.util.Arrays;
 
-import static Chapter6.QuickSort.partition;
-import static Chapter6.QuickSort.quickSort;
+import static Chapter7.QuickSort.partition;
+import static Chapter7.QuickSort.quickSort;
 
 /**
  * 随机化的快速排序
