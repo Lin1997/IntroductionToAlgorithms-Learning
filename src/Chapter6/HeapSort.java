@@ -8,7 +8,7 @@ import java.util.Arrays;
  * 适用:原址排序，渐进最优的比较排序算法
  */
 public class HeapSort {
-    static int heapSize;    //  因为HeapSort中需要将节点去除，故用变量来存放树中真正的元素数
+    public static int heapSize;    //  因为HeapSort中需要将节点去除，故用变量来存放树中真正的元素数
 
     /**
      * 最大堆(二叉)堆化，用于维护最大堆性质
